@@ -65,6 +65,7 @@ img {
     body  {
         background-color: lightblue;
     }
+
     /*------ frame ------*/
     .row {
         max-width: 90vw;
@@ -121,39 +122,55 @@ img {
     body  {
         background-color: lightgreen;
     }
-    .container.grey {
-        margin: 10px 0;
-    }
-    #steps {
-        padding: 20px 0;
-    }
-    #why {
-        padding: 20px 0;
-    }
+    
+    /*------ frame ------*/
     .row {
         max-width: 90vw;
         margin: 0 auto;
     }
+    .container.grey {
+        padding-bottom: 20px;
+    }
+    #steps h1 ,#why h1 {
+        padding-top: 20px;
+    }
+
+    /*------ title ------*/
     .row h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .row h3 {
-        font-size: 24px;
+        font-size: 28px;
     }
-    .left ,.central ,.right {
-        max-width: 100%;
-        font-size: 16px;
+
+    /*------ section 1 ------*/
+    .container .row .left ,.container .row .right {
+        min-height: 350px;
+        max-width: calc(100% / 2);
     }
-    .left img ,.central img ,.right img {
-        max-width: 30vw;
+    .container .row .left img {
+        height: 20vw;
+        width: 20vw;
+    }
+    .container .row .right img {
+        height: 20vw;
+        width: 30vw;        
+    }
+
+    /*------ section 2 ------*/
+    .container.grey .row .left ,.container.grey .row .central ,.container.grey .row .right {
+        min-height: 350px;
+        max-width: calc(100% / 3);
+    }
+    .container.grey .row .left img ,.container.grey .row .central img ,.container.grey .row .right img {
+        width: 20vw;
         height: 20vw;
     }
-    .first ,.second ,.third {
-        font-size: 16px;
-    }
+
+    /*------ section 3 ------*/
     .first img ,.second img ,.third img {
-        max-width: 40vw;
-        height: 40vw;
+        max-width: 30vw;
+        height: 30vw;
     }
 }
 
