@@ -4,11 +4,13 @@
     margin-right: auto;
     margin-top: 100px;
 }
+
 /* BLOCCO LEZIONI */
 #lezioni .row>.left, #lezioni .row>.right {
     width: 50%;
     float: left;
 }
+
 /* per centrare orizzontalmente */
 #lezioni .row img {
     display: block;
@@ -18,6 +20,7 @@
 #lezioni {
   text-align: center;
 }
+
 /* BLOCCO STEPS */
 #steps .row>.left, #steps .row>.central, #steps .row>.right {
     float: left;
@@ -26,6 +29,7 @@
 #steps {
     text-align: center;
 }
+
 /* BLOCCO PERCHE */
 #why {
     text-align: center;
@@ -39,6 +43,7 @@
     border-radius: 50%;
     padding: 30px
 }
+
 /* COMMON */
 .row::after {
     content: '';
@@ -55,9 +60,83 @@ img {
     clear: both;
 }
 
-/*------ Media Query ------*/
-@media screen and (max-width: 420px) {
+/*------ Media Query Tablet ------*/
+@media screen and (max-width: 720px) {
     body  {
-        background-color: lime;
+        background-color: lightblue;
+    }
+    .container.grey {
+        margin: 20px 0;
+    }
+    #steps {
+        padding: 20px 0;
+    }
+    #why {
+        padding: 20px 0;
+    }
+    .row {
+        width: 100%;
+    }
+    .row h1 {
+        font-size: 30px;
+    }
+    .row h3 {
+        font-size: 24px;
+    }
+    .left ,.central ,.right {
+        font-size: 16px;
+    }
+    .left img ,.central img ,.right img {
+        max-width: 30vw;
+        height: 20vw;
+    }
+    .first ,.second ,.third {
+        font-size: 16px;
+    }
+    .first img ,.second img ,.third img {
+        max-width: 40vw;
+        height: 40vw;
     }
 }
+
+/*------ Media Query Mobile ------*/
+@media screen and (max-width: 420px) {
+    body  {
+        background-color: lightgreen;
+    }
+    .container.grey {
+        margin: 10px 0;
+    }
+    #steps {
+        padding: 20px 0;
+    }
+    #why {
+        padding: 20px 0;
+    }
+    .row {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    .row h1 {
+        font-size: 30px;
+    }
+    .row h3 {
+        font-size: 24px;
+    }
+    .left ,.central ,.right {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .left img ,.central img ,.right img {
+        max-width: 30vw;
+        height: 20vw;
+    }
+    .first ,.second ,.third {
+        font-size: 16px;
+    }
+    .first img ,.second img ,.third img {
+        max-width: 40vw;
+        height: 40vw;
+    }
+}
+
